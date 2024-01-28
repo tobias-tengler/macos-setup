@@ -55,6 +55,12 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 git clone --depth=1 git@github.com:romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 ```
 
+- Install Nerd Font
+
+```sh
+p10k configure
+```
+
 - Install oh-my-zsh plugins
   - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 
@@ -66,4 +72,4 @@ git clone --depth=1 git@github.com:romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/
   ```sh
   git clone git@github.com:zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM}/plugins/zsh-syntax-highlighting
   ```
-- Setup shell config; TODO Link Github
+- [Setup shell dot-files](https://github.com/tobias-tengler/shell-config)
