@@ -83,6 +83,29 @@ brew install --cask visual-studio-code
 brew install --cask iterm2
 ```
 
+## Install software SDKs
+
+- Install [Rust](https://www.rust-lang.org/tools/install)
+
+```sh
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+- Install [.NET](https://dotnet.microsoft.com/en-us/download#macos)
+
+```sh
+brew install --cask dotnet-sdk
+```
+
+```sh
+sudo dotnet workload update
+```
+
+- Install [Node.js]
+
+```sh
+```
+
 ## Shell setup
 
 Follow [this guide](https://github.com/tobias-tengler/shell-config)
