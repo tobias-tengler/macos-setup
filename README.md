@@ -58,3 +58,7 @@ brew install --cask iterm2
 ## Shell setup
 
 Follow [this guide](https://github.com/tobias-tengler/shell-config)
+
+## Neovim setup
+
+Follow [this guide](https://github.com/tobias-tengler/neovim-config)
