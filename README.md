@@ -118,6 +118,8 @@ EOL
 
 ```sh
 nvm install --lts
+
+corepack enable
 ```
 
 ## Shell setup
