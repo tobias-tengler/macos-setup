@@ -1,16 +1,20 @@
-- Generate SSH Key
+- Generate SSH Key [Reference](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
 ```sh
 ssh-keygen -t ed25519 -C 45513122+tobias-tengler@users.noreply.github.com
 
 eval "$(ssh-agent -s)"
 
-# TODO: Update config file
+cat > ~/.ssh/config << EOL
+Host github.com
+  AddKeysToAgent yes
+  IdentityFile ~/.ssh/id_ed25519
+EOL
 
 ssh-add ~/.ssh/id_ed25519
 ```
 
-- Add key to [GitHub](https://github.com/settings/keys)
+- Add key to [GitHub](https://github.com/settings/keys) [Reference](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 
 ```sh
 pbcopy < ~/.ssh/id_ed25519.pub
