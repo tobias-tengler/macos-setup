@@ -22,6 +22,8 @@ eval "$(ssh-agent -s)"
 
 cat > ~/.ssh/config << EOL
 Host github.com
+	HostName github.com
+	User git
   AddKeysToAgent yes
   IdentityFile ~/.ssh/id_ed25519
 EOL
@@ -35,9 +37,21 @@ ssh-add ~/.ssh/id_ed25519
 pbcopy < ~/.ssh/id_ed25519.pub
 ```
 
-### Configuring for work
+### Configuring for work (Azure DevOps)
 
-TODO
+- Create and import a new SSH key as outlined above and postfix the file with (`_work`)
+
+- Configure Azure DevOps as a SSH host
+
+```sh
+cat >> ~/.ssh/config << EOL
+Host dev.azure.com
+	HostName dev.azure.com
+	User git
+  AddKeysToAgent yes
+  IdentityFile ~/.ssh/id_ed25519_work
+EOL
+```
 
 ## Install basic software
 
