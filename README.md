@@ -101,9 +101,23 @@ brew install --cask dotnet-sdk
 sudo dotnet workload update
 ```
 
-- Install [Node.js]
+- Install Node.js ([nvm](https://github.com/nvm-sh/nvm))
 
 ```sh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+```
+
+```sh
+# Important for the shell to have the relevant path
+omz reload
+
+cat > "$NVM_DIR/default-packages" << EOL
+yarn
+EOL
+```
+
+```sh
+nvm install --lts
 ```
 
 ## Shell setup
