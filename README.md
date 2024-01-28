@@ -1,3 +1,8 @@
+- Download [Logi Options Plus](https://www.logitech.com/de-ch/software/logi-options-plus.html) (for Logitech Mouse)
+  - Naviagte to "Point and Scroll" > "Scrollwheel" and set "Standard" scrolling:
+  
+  ![image](https://github.com/tobias-tengler/macos-setup/assets/45513122/063c022b-2884-48ed-bda2-eacf4704f304)
+
 - Generate SSH Key [Reference](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
 ```sh
@@ -15,6 +20,7 @@ ssh-add ~/.ssh/id_ed25519
 ```
 
 - Add key to [GitHub](https://github.com/settings/keys) [Reference](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+
 
 ```sh
 pbcopy < ~/.ssh/id_ed25519.pub
