@@ -38,7 +38,6 @@ pbcopy < ~/.ssh/id_ed25519.pub
 
 ## Install basic software
 
-- Download [Chrome](https://www.google.com/chrome/)
 - Install [homebrew](https://brew.sh/)
 
 ```sh
@@ -47,6 +46,18 @@ pbcopy < ~/.ssh/id_ed25519.pub
 (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> ~/.zprofile
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
+```
+
+- Install [Chrome](https://www.google.com/chrome/)
+
+```sh
+brew install --cask google-chrome
+```
+
+- Install [VS Code](https://code.visualstudio.com/)
+
+```sh
+brew install --cask visual-studio-code
 ```
 
 - Install [iTerm2](https://iterm2.com/)
