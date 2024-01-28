@@ -126,6 +126,12 @@ corepack enable
 
 Follow [this guide](https://github.com/tobias-tengler/shell-config)
 
+## Terminal setup
+
+1. Open iTerm2 settings
+2. Navigate to "Profiles" > "Other actions" > "Import profile from JSON"
+3. Import `~/.config/shell/iterm2-profile.json`
+
 ## Neovim setup
 
 Follow [this guide](https://github.com/tobias-tengler/neovim-config)
