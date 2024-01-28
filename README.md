@@ -77,6 +77,12 @@ brew install --cask google-chrome
 brew install --cask visual-studio-code
 ```
 
+- Install git
+
+  ```sh
+  brew install git
+  ```
+
 - Install [iTerm2](https://iterm2.com/)
 
 ```sh
@@ -135,3 +141,23 @@ Follow [this guide](https://github.com/tobias-tengler/shell-config)
 ## Neovim setup
 
 Follow [this guide](https://github.com/tobias-tengler/neovim-config)
+
+## Additional software
+
+- Redis
+
+  ```sh
+  brew install redis
+  ```
+
+- Watchman
+
+  ```sh
+  brew install watchman
+  ```
+
+- k6
+
+  ```sh
+  brew install k6
+  ```
