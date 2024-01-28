@@ -22,8 +22,8 @@ eval "$(ssh-agent -s)"
 
 cat > ~/.ssh/config << EOL
 Host github.com
-	HostName github.com
-	User git
+  HostName github.com
+  User git
   AddKeysToAgent yes
   IdentityFile ~/.ssh/id_ed25519
 EOL
