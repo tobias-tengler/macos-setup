@@ -40,18 +40,28 @@ pbcopy < ~/.ssh/id_ed25519.pub
 
 ### Configuring for work (Azure DevOps)
 
-- Create and import a new SSH key as outlined above and postfix the file with (`_work`)
-
-- Configure Azure DevOps as a SSH host
+- Generate SSH key (key files should end in `_work`)
 
 ```sh
+ssh-keygen -C tobias.tengler@digitecgalaxus.ch
+
+eval "$(ssh-agent -s)"
+
 cat >> ~/.ssh/config << EOL
 Host dev.azure.com
-	HostName dev.azure.com
-	User git
+  HostName dev.azure.com
+  User git
   AddKeysToAgent yes
-  IdentityFile ~/.ssh/id_ed25519_work
+  IdentityFile ~/.ssh/id_rsa_work
 EOL
+
+ssh-add ~/.ssh/id_rsa_work
+```
+
+- Add key in Azure DevOps
+
+```sh
+pbcopy < ~/.ssh/id_rsa_work.pub
 ```
 
 ## Install basic software
