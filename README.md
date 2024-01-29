@@ -1,3 +1,7 @@
+TODO: 
+- Disable Apple Music Popup
+- Set English as default keyboard language on lock screen
+
 ## Setup peripherals
 
 - Download [Logi Options Plus](https://www.logitech.com/de-ch/software/logi-options-plus.html) (for Logitech Mouse)
