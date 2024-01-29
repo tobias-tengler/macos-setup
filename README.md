@@ -7,6 +7,7 @@
 
 ## Configure MacOS
 
+- Settings > Keyboard > Delay until Repeat: Fast
 - Settings > Keyboard > Keyboard Shortcuts > Function Keys: Enable "Use ... as standard function keys"
 - Settings > Keyboard > Keyboard Shortcuts > Mission Control: Uncheck "Show Desktop (F11)"
 - Settings > Trackpad: Enable "Tap to click"
