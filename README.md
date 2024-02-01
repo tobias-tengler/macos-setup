@@ -17,6 +17,11 @@ TODO:
 - Settings > Keyboard > Keyboard Shortcuts > Function Keys: Enable "Use ... as standard function keys"
 - Settings > Keyboard > Keyboard Shortcuts > Mission Control: Uncheck "Show Desktop (F11)"
 - Settings > Trackpad: Enable "Tap to click"
+- Configure holding down keys:
+
+```sh
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+```
 
 ## Setup SSH
 
