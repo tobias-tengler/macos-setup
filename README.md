@@ -1,6 +1,7 @@
 TODO: 
 - Disable Apple Music Popup
 - Set English as default keyboard language on lock screen
+- Install React DevTools, Relay DevTools, uBlock Origin
 
 ## Setup peripherals
 
