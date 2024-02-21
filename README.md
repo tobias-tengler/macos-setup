@@ -17,6 +17,10 @@ TODO:
 - Settings > Keyboard > Key repeat rate: Fast
 - Settings > Keyboard > Keyboard Shortcuts > Function Keys: Enable "Use ... as standard function keys"
 - Settings > Keyboard > Keyboard Shortcuts > Mission Control: Uncheck "Show Desktop (F11)"
+- Settings > Keyboard > Text Input > "Input Sources" + Edit >
+  - Disable "Correct spelling automatically"
+  - Disable "Capitalize words automatically"
+  - Disable "Add period with double space"
 - Settings > Trackpad: Enable "Tap to click"
 - Configure holding down keys:
 
