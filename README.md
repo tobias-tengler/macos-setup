@@ -46,6 +46,8 @@ Host github.com
 EOL
 
 ssh-add ~/.ssh/id_ed25519
+
+git config --global user.signingkey ~/.ssh/id_ed25519.pub
 ```
 
 - Add key in [GitHub settings](https://github.com/settings/keys) both as authentication and signing key ([Reference](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account))
@@ -158,14 +160,6 @@ corepack enable
 ## Shell setup
 
 Follow [this guide](https://github.com/tobias-tengler/shell-config)
-
-## Git setup
-
-```sh
-git config --global gpg.format ssh
-
-git config --global user.signingkey ~/.ssh/id_ed25519.pub
-```
 
 ## Terminal setup
 
