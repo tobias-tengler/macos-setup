@@ -2,6 +2,7 @@ TODO:
 - Disable Apple Music Popup
 - Set English as default keyboard language on lock screen
 - Install React DevTools, Relay DevTools, uBlock Origin
+- Disable dock bouncing `defaults write com.apple.dock no-bouncing -bool TRUE`
 
 ## Setup peripherals
 
