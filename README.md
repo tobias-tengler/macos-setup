@@ -62,7 +62,7 @@ pbcopy < ~/.ssh/id_ed25519.pub
 - Generate SSH key (key files should end in `_work`)
 
 ```sh
-ssh-keygen -C tobias.tengler@digitecgalaxus.ch
+ssh-keygen -t rsa-sha2-256 -C tobias.tengler@digitecgalaxus.ch
 
 eval "$(ssh-agent -s)"
 
