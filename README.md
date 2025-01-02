@@ -158,6 +158,10 @@ nvm install --lts
 corepack enable
 ```
 
+## Setup NuGet authentication
+
+Follow [this guide](https://github.com/microsoft/artifacts-credprovider?tab=readme-ov-file#installation-on-linux-and-mac).
+
 ## Shell setup
 
 Follow [this guide](https://github.com/tobias-tengler/shell-config)
