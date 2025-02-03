@@ -195,3 +195,9 @@ Follow [this guide](https://github.com/tobias-tengler/neovim-config)
   ```sh
   brew install k6
   ```
+
+- k9s
+
+  ```sh
+  brew install k9s
+  ```
