@@ -4,13 +4,6 @@ TODO:
 - Install React DevTools, Relay DevTools, uBlock Origin
 - Disable dock bouncing `defaults write com.apple.dock no-bouncing -bool TRUE`
 
-## Setup peripherals
-
-- Download [Logi Options Plus](https://www.logitech.com/de-ch/software/logi-options-plus.html) (for Logitech Mouse)
-  - Naviagte to "Point and Scroll" > "Scrollwheel" and set "Standard" scrolling:
-  
-  ![image](https://github.com/tobias-tengler/macos-setup/assets/45513122/063c022b-2884-48ed-bda2-eacf4704f304)
-
 ## Configure MacOS
 
 - Settings > Dock > Show suggest and recent items: Disable
