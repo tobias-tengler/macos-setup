@@ -58,6 +58,8 @@ brew install --cask visual-studio-code
 brew install --cask iterm2
 ```
 
+- Install Docker ([Rancher Desktop](https://rancherdesktop.io))
+
 ## Install software SDKs
 
 - Install [Rust](https://www.rust-lang.org/tools/install)
