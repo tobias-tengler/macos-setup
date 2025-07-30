@@ -79,7 +79,7 @@ sudo dotnet workload update
 - Install Node.js ([nvm](https://github.com/nvm-sh/nvm))
 
 ```sh
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
 ```
 
 ```sh
