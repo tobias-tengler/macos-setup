@@ -22,60 +22,6 @@ TODO:
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 ```
 
-## Setup SSH
-
-- Generate SSH Key ([Reference](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent))
-
-```sh
-ssh-keygen -t ed25519 -C 45513122+tobias-tengler@users.noreply.github.com
-
-eval "$(ssh-agent -s)"
-
-cat > ~/.ssh/config << EOL
-Host github.com
-  HostName github.com
-  User git
-  AddKeysToAgent yes
-  IdentityFile ~/.ssh/id_ed25519
-EOL
-
-ssh-add ~/.ssh/id_ed25519
-
-git config --global user.signingkey ~/.ssh/id_ed25519.pub
-```
-
-- Add key in [GitHub settings](https://github.com/settings/keys) both as authentication and signing key ([Reference](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account))
-
-```sh
-pbcopy < ~/.ssh/id_ed25519.pub
-```
-
-### Configuring for work (Azure DevOps)
-
-- Generate SSH key (key files should end in `_work`)
-
-```sh
-ssh-keygen -t rsa-sha2-256 -C tobias.tengler@digitecgalaxus.ch
-
-eval "$(ssh-agent -s)"
-
-cat >> ~/.ssh/config << EOL
-Host dev.azure.com
-  HostName dev.azure.com
-  User git
-  AddKeysToAgent yes
-  IdentityFile ~/.ssh/id_rsa_work
-EOL
-
-ssh-add ~/.ssh/id_rsa_work
-```
-
-- Add key in Azure DevOps
-
-```sh
-pbcopy < ~/.ssh/id_rsa_work.pub
-```
-
 ## Install basic software
 
 - Install [homebrew](https://brew.sh/)
@@ -151,9 +97,33 @@ nvm install --lts
 corepack enable
 ```
 
-## Setup NuGet authentication
+## Setup SSH
 
-Follow [this guide](https://github.com/microsoft/artifacts-credprovider?tab=readme-ov-file#installation-on-linux-and-mac).
+- Generate SSH Key ([Reference](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent))
+
+```sh
+ssh-keygen -t ed25519 -C 45513122+tobias-tengler@users.noreply.github.com
+
+eval "$(ssh-agent -s)"
+
+cat > ~/.ssh/config << EOL
+Host github.com
+  HostName github.com
+  User git
+  AddKeysToAgent yes
+  IdentityFile ~/.ssh/id_ed25519
+EOL
+
+ssh-add ~/.ssh/id_ed25519
+
+git config --global user.signingkey ~/.ssh/id_ed25519.pub
+```
+
+- Add key in [GitHub settings](https://github.com/settings/keys) both as authentication and signing key ([Reference](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account))
+
+```sh
+pbcopy < ~/.ssh/id_ed25519.pub
+```
 
 ## Shell setup
 
@@ -183,14 +153,12 @@ Follow [this guide](https://github.com/tobias-tengler/neovim-config)
   brew install watchman
   ```
 
-- k6
-
-  ```sh
-  brew install k6
-  ```
-
 - k9s
 
   ```sh
   brew install k9s
   ```
+
+## Setup NuGet authentication
+
+Follow [this guide](https://github.com/microsoft/artifacts-credprovider?tab=readme-ov-file#installation-on-linux-and-mac).
